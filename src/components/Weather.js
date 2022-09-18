@@ -6,8 +6,6 @@ import { useSelector } from 'react-redux'
 const Weather = () => {
   const {weather} = useSelector(state => state.weather)
   const result = Object.values(weather)
-  console.log(result)
-
 
   return (
     <div className='infoWeath'>
