@@ -12,7 +12,7 @@ const Weather = () => {
       
       <div>
           {result.map((item, index) => (
-        <p>{item}</p>
+        <p key={index}>{item}</p>
     ))}
       </div>
         
