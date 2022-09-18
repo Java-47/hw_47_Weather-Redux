@@ -17,6 +17,6 @@ export const FetchWeatherAction = () => {
             `Pressure: ${data.main.pressure}`,
             `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}`]
             )))
-            .catch(e => dispatch(putWeather("Error")));
+            .catch(e => dispatch(putWeather(["Error. Enter correct city name!"])));
     }
 }
